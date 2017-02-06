@@ -1,7 +1,7 @@
 public void setup()
 {
 	size(800, 800);
-	background(0);
+	background(255);
 }
 public void draw()
 {
@@ -13,27 +13,28 @@ public void mouseDragged()//optional
 }
 public void rectan(int x, int y, int len) 
 {
+	noStroke();
 	rectMode(CENTER);
-	if(len <= 20)
+	if(len <= 10)
 	{
-		fill(255);
+		fill(0);
 		rect(x, y, len, len);
 	}
 	else
 	{
-		fill(255);
+		fill(0);
 		rect(x, y, len, len);
 		//bottom right
-		fill(255);
+		fill(0);
 		rect(x+len/2, y+len/2, len/2, len/2);
 		//bottom left
-		fill(255);
+		fill(0);
 		rect(x-len/2, y+len/2, len/2, len/2);
 		//top right
-		fill(255);
+		fill(0);
 		rect(x+len/2, y-len/2, len/2, len/2);
 		//top left
-		fill(255);
+		fill(0);
 		rect(x-len/2, y-len/2, len/2, len/2);
 		//recursion
 		rectan(x+len/2, y+len/2, len/2);
