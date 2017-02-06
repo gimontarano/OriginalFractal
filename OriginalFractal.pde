@@ -15,7 +15,7 @@ public void rectan(int x, int y, int len)
 {
 	noStroke();
 	rectMode(CENTER);
-	if(len <= 10)
+	if(len <= 1)
 	{
 		fill(0);
 		rect(x, y, len, len);
